@@ -1,287 +1,285 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-:root{
-    --primary-color: #E5E5E5;
+:root {
+  --primary-color: #e5e5e5;
 }
-body{
-    background-color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+body {
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 /* Desktop */
-@media (min-width: 769px){
-    header{
-        padding:1rem;
-        margin-top: 92px;
-        margin-left: 909px;
-        display:flex;
-        justify-content: flex-end;
-    }
-    input[type="text"]::placeholder {
-        color: #C6C6C6;
-    }
-    .search{
-        background: #FFFFFF;
-        border: 1px solid #DEDEDE;
-        padding:0.5rem 1rem;
-        border-radius: 24px;
-        font-size: 12px;
-        line-height: 14px;
-        color: #C6C6C6;
-        font-family: inherit;
-    }
-    .search:focus{
-        outline:0;
-    }
-    #main{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 60rem;
-        margin: 0 auto;
-        margin-top: 5rem;
-        margin-bottom: 15rem;
-    }
-    .movie {
-        
-        width: 200px;
-        margin: 1rem;
-        border-radius: 16px;
-        box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
-        background-color: #FFFFFF;
-        position:relative;
-        overflow: hidden;
-    }
-    .movie img{
-        width:100%;
-    }
-    .movie_info {
-        color: gray;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 1rem 1rem;
-        letter-spacing: 0.5px;
-    }
-    .movie_info h3 {
-        color: #000;
-        margin: 10px 45px 40px 15px;
-    }
-    .movie_info h4{
-        color: #999999;
-        position: absolute;
-        left: 14.18%;
-        right: 34.43%;
-        top: 81.8%;
-        bottom: 9.87%;
-        margin: 10px 45px 20px 15px;
-        max-height: 100%;
-    }
-    .movie_info span{
-        position: absolute;
-        left: 73.76%;
-        right: 7.8%;
-        top: 71.39%;
-        bottom: 19.62%;
-        padding: 0.25rem 0.30rem;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 14px;
-        background: #F2F2F2;
-        border-radius: 4px;
-    }
-    .movie_info span.green{
-        color: green;
-    }
-    .movie_info span.blue{
-        color: blue;
-    }
-    .movie_info span.red{
-        color: red;
-    }
+@media (min-width: 769px) {
+  header {
+    padding: 1rem;
+    margin-top: 92px;
+    margin-left: 909px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  input[type="text"]::placeholder {
+    color: #c6c6c6;
+  }
+  .search {
+    background: #ffffff;
+    border: 1px solid #dedede;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #c6c6c6;
+    font-family: inherit;
+  }
+  .search:focus {
+    outline: 0;
+  }
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+  }
+  .movie {
+    width: 200px;
+    margin: 1rem;
+    border-radius: 16px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  .movie img {
+    width: 100%;
+  }
+  .movie_info {
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+  }
+  .movie_info h3 {
+    color: #000;
+    margin: 10px 45px 40px 15px; 
+  }
+  .movie_info h4 {
+    color: #999999;
+    position: absolute;
+    left: 14.18%;
+    right: 34.43%;
+    top: 81.8%;
+    bottom: 9.87%;
+    margin-top: 30px;
+    max-height: 100%;
+  }
+  .movie_info span {
+    position: absolute;
+    left: 73.76%;
+    right: 7.8%;
+    top: 71.39%;
+    bottom: 19.62%;
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    background: #f2f2f2;
+    border-radius: 4px;
+  }
+  .movie_info span.green {
+    color: green;
+  }
+  .movie_info span.blue {
+    color: blue;
+  }
+  .movie_info span.red {
+    color: red;
+  }
 }
 /* Tablet  */
-@media (min-width: 481px)and (max-width: 768px){
-    header{
-        padding:1rem;
-        margin-top: 92px;
-        margin-left: 909px;
-        display:flex;
-        justify-content: flex-end;
-    }
-    input[type="text"]::placeholder {
-        color: #C6C6C6;
-    }
-    .search{
-        background: #FFFFFF;
-        border: 1px solid #DEDEDE;
-        padding:0.5rem 1rem;
-        border-radius: 24px;
-        font-size: 12px;
-        line-height: 14px;
-        color: #C6C6C6;
-        font-family: inherit;
-    }
-    .search:focus{
-        outline:0;
-    }
-    #main{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 30rem;
-        margin: 0 auto;
-        margin-top: 5rem;
-        margin-bottom: 15rem;
-    }
-    .movie {
-        
-        width: 200px;
-        margin: 1rem;
-        border-radius: 16px;
-        box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
-        background-color: #FFFFFF;
-        position:relative;
-        overflow: hidden;
-    }
-    .movie img{
-        width:100%;
-    }
-    .movie_info {
-        color: gray;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 1rem 1rem;
-        letter-spacing: 0.5px;
-    }
-    .movie_info h3 {
-        color: #000;
-        margin: 10px 45px 40px 15px;
-    }
-    .movie_info h4{
-        color: #999999;
-        position: absolute;
-        left: 14.18%;
-        right: 34.43%;
-        top: 81.8%;
-        bottom: 9.87%;
-        margin: 10px 45px 20px 15px;
-        max-height: 100%;
-    }
-    .movie_info span{
-        position: absolute;
-        left: 73.76%;
-        right: 7.8%;
-        top: 71.39%;
-        bottom: 19.62%;
-        padding: 0.25rem 0.30rem;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 14px;
-        background: #F2F2F2;
-        border-radius: 4px;
-    }
-    .movie_info span.green{
-        color: green;
-    }
-    .movie_info span.blue{
-        color: blue;
-    }
-    .movie_info span.red{
-        color: red;
-    }
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 1rem;
+    margin-top: 92px;
+    margin-left: 909px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  input[type="text"]::placeholder {
+    color: #c6c6c6;
+  }
+  .search {
+    background: #ffffff;
+    border: 1px solid #dedede;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #c6c6c6;
+    font-family: inherit;
+  }
+  .search:focus {
+    outline: 0;
+  }
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+  }
+  .movie {
+    width: 200px;
+    margin: 1rem;
+    border-radius: 16px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  .movie img {
+    width: 100%;
+  }
+  .movie_info {
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+  }
+  .movie_info h3 {
+    color: #000;
+    margin: 10px 45px 40px 15px;
+  }
+  .movie_info h4 {
+    color: #999999;
+    position: absolute;
+    left: 14.18%;
+    right: 34.43%;
+    top: 81.8%;
+    bottom: 9.87%;
+    margin-top: 30px;
+    max-height: 100%;
+  }
+  .movie_info span {
+    position: absolute;
+    left: 73.76%;
+    right: 7.8%;
+    top: 71.39%;
+    bottom: 19.62%;
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    background: #f2f2f2;
+    border-radius: 4px;
+  }
+  .movie_info span.green {
+    color: green;
+  }
+  .movie_info span.blue {
+    color: blue;
+  }
+  .movie_info span.red {
+    color: red;
+  }
 }
-  /* Mobile */  
-@media   (min-width: 320px) and (max-width: 480px){
-    header{
-        padding:1rem;
-        margin-top: 92px;
-        margin-left: 909px;
-        display:flex;
-        justify-content: flex-end;
-    }
-    input[type="text"]::placeholder {
-        color: #C6C6C6;
-    }
-    .search{
-        background: #FFFFFF;
-        border: 1px solid #DEDEDE;
-        padding:0.5rem 1rem;
-        border-radius: 24px;
-        font-size: 12px;
-        line-height: 14px;
-        color: #C6C6C6;
-        font-family: inherit;
-    }
-    .search:focus{
-        outline:0;
-    }
-    #main{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 15rem;
-        margin: 0 auto;
-        margin-top: 5rem;
-        margin-bottom: 15rem;
-    }
-    .movie {    
-        width: 200px;
-        margin: 1rem;
-        border-radius: 16px;
-        box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
-        background-color: #FFFFFF;
-        position:relative;
-        overflow: hidden;
-    }
-    .movie img{
-        width:100%;
-    }
-    .movie_info {
-        color: gray;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 1rem 1rem;
-        letter-spacing: 0.5px;
-    }
-    .movie_info h3 {
-        color: #000;
-        margin: 10px 45px 40px 15px;
-    }
-    .movie_info h4{
-        color: #999999;
-        position: absolute;
-        left: 14.18%;
-        right: 34.43%;
-        top: 81.8%;
-        bottom: 9.87%;
-        margin: 10px 45px 20px 15px;
-        max-height: 100%;
-    }
-    .movie_info span{
-        position: absolute;
-        left: 73.76%;
-        right: 7.8%;
-        top: 71.39%;
-        bottom: 19.62%;
-        padding: 0.25rem 0.30rem;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 14px;
-        background: #F2F2F2;
-        border-radius: 4px;
-    }
-    .movie_info span.green{
-        color: green;
-    }
-    .movie_info span.blue{
-        color: blue;
-    }
-    .movie_info span.red{
-        color: red;
-    }
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    padding: 1rem;
+    margin-top: 92px;
+    margin-left: 909px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  input[type="text"]::placeholder {
+    color: #c6c6c6;
+  }
+  .search {
+    background: #ffffff;
+    border: 1px solid #dedede;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #c6c6c6;
+    font-family: inherit;
+  }
+  .search:focus {
+    outline: 0;
+  }
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+  }
+  .movie {
+    width: 200px;
+    margin: 1rem;
+    border-radius: 16px;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  .movie img {
+    width: 100%;
+  }
+  .movie_info {
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+  }
+  .movie_info h3 {
+    color: #000;
+    margin: 10px 45px 40px 15px;
+  }
+  .movie_info h4 {
+    color: #999999;
+    position: absolute;
+    left: 14.18%;
+    right: 34.43%;
+    top: 81.8%;
+    bottom: 9.87%;
+    margin-top: 30px;
+    max-height: 100%;
+  }
+  .movie_info span {
+    position: absolute;
+    left: 73.76%;
+    right: 7.8%;
+    top: 71.39%;
+    bottom: 19.62%;
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    background: #f2f2f2;
+    border-radius: 4px;
+  }
+  .movie_info span.green {
+    color: green;
+  }
+  .movie_info span.blue {
+    color: blue;
+  }
+  .movie_info span.red {
+    color: red;
+  }
 }
